@@ -1,0 +1,13 @@
+[package]
+name = "secure_chat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10"  # AES-GCM encryption
+rand = "0.8"      # Random number generator
+rusqlite = { version = "0.29", features = ["bundled"] }
+base64 = "0.21"   # Base64 encoding/decoding
+sha2 = "0.10"
+async-std = "1.12"
+tokio = { version = "1", features = ["full"] }
